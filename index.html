@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">CITCS Schedule Scheme</h1>
+    <p id="description" class="description text-center">
+      This form collects students information in the College of Information Technology and Computer Science and your schedule preferences on the implementation of Online Distance Learning (ODL) for the 3rd Trimester SY 2020-2021.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="name-label" for="number">ID Number</label>
+      <input
+        type="number"
+        name="number"
+        id="name"
+        class="form-control"
+        placeholder="Enter your ID Number (exclude the dashes)"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your school Email"
+        required
+      />
+    </div>
+   <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+
+    <div class="form-group">
+      <p>Degree Program:</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current program</option>
+        <option value="BSIT">Bachelor of Science in Information Technology</option>
+        <option value="BSCS">Bachelor of Science in Computer Science</option>
+        <option value="BSDA">Bachelor of Science in Data Analytics</option>
+        <option value="ACT">Associate in Computer Technology</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Year Level</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current program</option>
+        <option value="one">1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+      </select>
+    </div>
+    <fieldset>
+    <div class="form-group">
+      <p>Which schedule scheme do you prefer for the courses for the 3rd Trimester SY 2020-2021?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Whole Term Scheduling Scheme</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Half Term Scheduling Scheme (1st Half and 2nd Half Course Sheduling)</label
+      >
+    </div>
+  </fieldset>
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Better Scheduling"
+          type="checkbox"
+          class="input-checkbox"
+        />Better Scheduling</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Synchronous Lessons"
+          type="checkbox"
+          class="input-checkbox"
+        />Synchronous Lessons</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Asynchronous Materials"
+          type="checkbox"
+          class="input-checkbox"
+        />Asynchronous Materials</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Modules"
+          type="checkbox"
+          class="input-checkbox"
+        />Modules</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Conferences"
+          type="checkbox"
+          class="input-checkbox"
+        />Conferences</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Deadlines"
+          type="checkbox"
+          class="input-checkbox"
+        />Deadlines</label>
+      <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Additional Courses</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Why did you choose the scheduling scheme?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comments and suggestions here..."
+        style="font-family: courier new;"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
